@@ -31,9 +31,8 @@ reset=`tput sgr0`
     2)  bash createDB.sh ;;
     3)  bash renameDB.sh ;;
     4)  bash dropDB.sh ;;
-    5)  ls ./DBMS ; bash mainMenu.sh;;
-    6) clear ; exit ;;
-    *) echo " $(tput setab 7)  ${red} Wrong Choice .. Try Again ${reset}" ; bash mainMenu.sh; 
+    5)  ls ./DBMS ; clear;bash mainMenu.sh;;
+    6) clear ; exit ;; 
+    *) clear; echo " $(tput setab 7)  ${red} Wrong Choice .. Try Again ${reset}" ; bash mainMenu.sh; 
 # echo "${blue}red text ${green}green text${reset}"
   esac
-#}
